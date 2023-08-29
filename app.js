@@ -20,6 +20,10 @@ app.get('/app2', (req, res) => {
   res.send('Hello this App 2!')
 });
 
+app.get('/fauzan', (req, res) => {
+  res.send('Coba create apss baru')
+});
+
 app.get('/users', (req, res, next) => {
   const sql = "SELECT * FROM tb_data ORDER BY id desc"
   connection.query(sql,(error, fields) => {
