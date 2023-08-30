@@ -7,7 +7,7 @@ services:
     links:
       - db
     ports:
-      - "8080:3000"
+      - "3000"
     volumes:
       - app-data:/app/public/images
 
@@ -31,10 +31,10 @@ services:
     image: "phpmyadmin"
     restart: always
     ports:
-      - "9090:80"
+      - "8000:80"
     environment:
       - PMA_HOST=db
-
-  volumes:
-    app-data:
-    db-data:
+  
+volumes:
+  app-data:
+  db-data:
