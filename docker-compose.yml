@@ -36,5 +36,5 @@ services:
       - PMA_HOST=db
 
   volumes:
-  app-data:
-  db-data:
+    app-data:
+    db-data:
